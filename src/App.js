@@ -55,7 +55,8 @@ function App() {
     const searchClick = () => {
         setSearchFieldHide(false);
         // console.log(file);
-        // postData(file);
+        const response = postData(file);
+        setDataItems(response.shops.length > 3 ? response.shops : response.links);
         setHistoryItems([file, ...historyItems]);
     };
   return (
