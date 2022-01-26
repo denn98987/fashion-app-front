@@ -6,8 +6,6 @@ const postData = async photoData => {
         {
             method: 'POST',
             body: data,
-            mode: 'cors',
-            credentials: 'include'
         },
     );
     console.log('Post data response: ', response);
